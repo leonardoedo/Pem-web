@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form1" name="form1" method="post" action="Form.php">
+        <center>
+            <h1>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Logo_udinus1.jpg/150px-Logo_udinus1.jpg"
+                    style="float:left;" width="100" height="100">
+                <font color="#000080">UNIVERSITAS DIAN NUSWANTORO<br>Semarang</font>
+            </h1>
+        </center>
+        <table borde r="0" width="70%">
+            <br>
+            <hr size="2" color="#000080">
+            </tr>
+            <h1>
+                <font color="#E4CD05">Data Diri Mahasiswa Fakultas Ilmu Komputer</font><br>
+            </h1>
+            <tr>
+                </td>
+                <td><label for="nim">NIM</label></td>
+                <td><input type="text" id="nim"></td> 
+            </tr> 
+            
+            <tr>
+                <td><label for="nama lengkap">Nama Lengkap</label></td>
+                <td><input type="text" id="nama"></td>
+            </tr> 
+            
+            <tr>
+                <td>Tanggal lahir</td>
+                <td><input type="date" name="tgl_lhr"></td>
+            </tr>
+            <tr>
+                <td>program studi</td>
+                <td>
+                    <select name="fprodi">
+                        <option value="">pilih Prodi</option>
+                        <option value="TIS1">S1 - Teknik Informatika</option>
+                        <option value="SI">S1 - Sistem Informasi</option>
+                        <option value="TID3">D3 - Teknik Informatika</option>
+                        <option value="DKV">S1 - Desain Komunikasi Visual</option>
+                        <option value="FTV">SST - Film dan Televisi</option>
+                        <option value="Ilkom">S1 - Ilmu Komunikasi</option>
+                        <option value="Animasi">SST - Animasi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jam Kelas</td>
+                <td>
+                    <input type='radio' name='jam_kelas' value='jam pagi' />Jam Pagi
+                    <input type='radio' name='jam_kelas' value='jam malam' />Jam Malam
+                </td>
+            <tr>
+                </td>
+                <td><label for="alamat ">Alamat </label></td>
+                <td><textarea type="text" id="alamat" rows="5" cols="30"></textarea></td>
+            </tr>
+
+
+            <tr>
+                <td><label for="no hp">Nomor HP</label></td>
+                <td><input type="text"  id="no hp"></td>
+            </tr>
+
+            <tr>
+
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+
+            <tr>
+
+                <td><label for="Ormawa">Organisai Mahasiswa</label></td>
+                <td><input type="text" placeholder="Ormawa yang diikuti " id="Ormawa"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="2"><input type="checkbox">data yang di isi sudah sesuai</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"> <input type="submit" name="fkirim" value="kirim" value="kirim"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

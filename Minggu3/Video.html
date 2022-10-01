@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar HTML 5 (video youtube) </title>
+    </head>
+    <body>
+        <center>
+            <button onclick="playVid()" type="button"> Play Video </button>
+            <button onclick="pauseVid()" type="button"> Pause Video </button>
+            <button onclick="duration ()" type="button"> Duration </button><br>
+        </center>
+
+        <h2>Video HTML 5</h2>
+        <video id="video" width="400" height="280" autoplay muted > 
+            <source src="mov_bbb.mp4" type="video/mp4">
+        </video>
+            <h2>Belajar memasukan video </h2>
+        <p> Belajar memasukan video dari youtube di web</p>
+        <iframe width="420" height="345"src="https://www.youtube.com/embed/0t7HnS7F77w" >
+    </iframe>
+    </body>
+    <script>
+            var vid = document.getElementById ("video");
+            
+            function playVid() {
+                vid.play() ;
+            }
+            function pauseVid() {
+                vid.pause ();
+            }
+
+            function duration() {
+                alert (vid.duration) ;
+            }
+
+    </script>
+
+
+</html>
