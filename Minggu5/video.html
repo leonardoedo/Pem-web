@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body style="background-color:#C0C0C0;">
+    <center>
+        <button onclick="playVid()" type="button"> Play Video </button>
+        <button onclick="pauseVid()" type="button"> Pause Video </button>
+        <button onclick="duration ()" type="button"> Duration </button><br>
+    </center>
+
+    <h2>Video </h2>
+    <video id="video" width="400" height="280" autoplay muted > 
+        <source src="file tambahan/cek.mp4" type="video/mp4">
+    </video>
+        
+    
+</body>
+<script>
+        var vid = document.getElementById ("video");
+        
+        function playVid() {
+            vid.play() ;
+        }
+        function pauseVid() {
+            vid.pause ();
+        }
+
+        function duration() {
+            alert (vid.duration) ;
+        }
+
+</script>
+</html>
