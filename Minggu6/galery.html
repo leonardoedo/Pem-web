@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+        :root {
+            --font-family: 'Oswald', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+
+
+        body {
+            size: auto;
+            font-family: var(--font-family);
+            background-image: url("+/neon.png");
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            display: table;
+        }
+
+        body h1 {
+            margin: 250px;
+            font-size: 5rem;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            text-transform: uppercase;
+            background-attachment: fixed;
+
+        }
+
+        nav ul {
+            margin: 5%;
+            margin-bottom: 5%;
+            width: 450px;
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 25px 0;
+            border-radius: 25px;
+            border: 0.1px solid #099fff;
+            background: rgba(37, 34, 34, 0.411);
+            box-shadow: 0 4px 8px 0 #00FFFF;
+
+        }
+
+        nav li {
+            margin: auto;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        nav li:after {
+            display: block;
+        }
+
+        nav li:hover:after {
+            transform: scalex(1);
+        }
+
+        nav a {
+            color: white;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <nav>
+            <ul>
+                <li><a style="text-decoration:none" href="index.html">Home </a></li>
+                <li><a style="text-decoration:none" href="+/cv.pdf">Download CV</a></li>
+                <li><a style="text-decoration:none" href="kontak.html">kontak</a></li>
+                <li><a style="text-decoration:none" href="tentang.html">About me</a></li>
+                <li><a style="text-decoration:none" href="galery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </center>
+    <div class="gallery">
+        <a target="_blank" href="+/haji.jpg">
+            <img src="haji.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">haji juna</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+            <img src="+/edo.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">aku</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+            <img src="+/foto.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="+/neon.png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+
+</body>
+
+</html>
