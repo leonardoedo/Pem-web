@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+header{
+    width: 800px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 1px;
+    background-color: #ccc;
+    text-align: center;
+}
+nav{
+    margin-bottom: 10px;
+    float: left;
+    width: 20px;
+    text-align: center;
+    margin-right: 20PX;
+    
+}
+
+nav ul li{
+    background-color: #e5e5e5;
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+article{
+    width: 1200px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 150px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+footer{
+    top: 90%;
+    bottom: 10%;
+    text-align: center;
+}

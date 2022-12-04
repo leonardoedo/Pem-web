@@ -3,15 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="webside 1 - kontak me">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Leonardo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kotak</title>
+    <link rel="icon" type="image/x-icon" href="/+/favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
         :root {
             --font-family: 'Oswald', sans-serif;
         }
+
         * {
             margin: 0;
             padding: 0
@@ -26,10 +30,11 @@
             height: 100vh;
             background-position: center;
             background-attachment: fixed;
-            display: table; 
+            display: table;
             margin-left: 10px;
-            
+
         }
+
         nav ul {
             margin: 5%;
             margin-bottom: 10%;
@@ -43,22 +48,27 @@
             background: rgba(37, 34, 34, 0.411);
             box-shadow: 0 4px 8px 0 #00FFFF;
         }
+
         nav li {
             margin: auto;
             color: white;
             font-size: 20px;
             cursor: pointer;
         }
+
         nav li:after {
             display: block;
         }
+
         nav li:hover:after {
             transform: scalex(1);
         }
+
         nav a {
             color: white;
         }
-        .input1 input{
+
+        .input1 input {
             box-sizing: border-box;
             width: 326px;
             height: 36px;
@@ -70,7 +80,8 @@
             padding-left: 5%;
             color: white;
         }
-        textarea{
+
+        textarea {
             box-sizing: border-box;
             background: rgba(37, 34, 34, 0.411);
             border: 1px solid #000000;
@@ -81,7 +92,8 @@
             padding-top: 2%;
             color: white;
         }
-        .kirim input{
+
+        .kirim input {
             box-sizing: border-box;
             width: 100px;
             height: 50px;
@@ -90,14 +102,21 @@
             box-shadow: 0 4px 8px 0 #00FFFF;
             border-radius: 25px;
             transition: all 0.5s;
-            color: white;  
+            color: white;
         }
-        img{
+
+        img {
             padding-left: 10px;
             width: 100px;
             height: 100px;
         }
-        
+        table{
+            color:white;
+        }
+        td{
+            padding: 5px;
+            margin: 5%;
+        }
     </style>
 </head>
 
@@ -116,21 +135,37 @@
     <div>
         <h1 style="color: white;"> yuk </h1>
         <h1 style="color: white;">contact me </h1>
-       
-        <img src=" https://saiinfoways.com/wp-content/uploads/2020/04/arrow-gif.gif" border="0"/>
-        <form >
-            <div class="input1">
 
-                <label for="email">Email</label><br />
-                <input type="email" name="email" placeholder="alamat email" />
+        <img src=" https://saiinfoways.com/wp-content/uploads/2020/04/arrow-gif.gif" border="0" />
+        <form id="form1" name="form1" method="post" action="kirim.php">
+            <div class="input1">
+                <br>
+                <label for="nama lengkap">Nama Lengkap</label><br>
+                <input type="text" id="nama" placeholder="Nama">
+                <label for="no hp">Nomor HP</label><br><br>
+                <input type="text" id="no hp" placeholder="Nomor hp" />
+                <label for="email">Email</label><br /><br>
+                <input type="email" id="email" placeholder="alamat email" />
             </div>
+            </tr>
+            <table>
+
+                <tr>
+                    <br>
+                    <td>gender</td>
+                    <td>
+                        <input type='radio' name='jam_kelas' value='jam pagi' />cowok <br>
+                        <input type='radio' name='jam_kelas' value='jam malam' />cewek
+                    </td>
+                <tr>
+            </table>
             <br />
             <label for="message">Pesan</label><br />
             <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
             <br />
             <br />
             <div class="kirim">
-                <input type="submit" value="Kirim" />
+                <input type="submit" name="fkirim" value="kirim" value="kirim" />
             </div>
         </form>
     </div>

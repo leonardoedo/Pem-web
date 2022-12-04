@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="webside 1 - tentang aku">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Leonardo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page</title>
+    <title>tentang</title>
+    <link rel="icon" type="image/x-icon" href="/+/favicon.ico">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
@@ -71,13 +74,17 @@
         footer{
             clear: left;
         }
+        aside{
+            float: right;
+            margin-right: 10%;
+        }
+
         article{
             padding: 50px;
             overflow: auto;
         }
         </style>
 </head>
-
 <body >
     <center>
         <nav>
@@ -86,11 +93,21 @@
                 <li><a style="text-decoration:none" href="+/cv.pdf">Download CV</a></li>
                 <li><a style="text-decoration:none" href="kontak.html">kontak</a></li>
                 <li><a style="text-decoration:none" href="tentang.html">About me</a></li>
+                <li><a style="text-decoration:none" href="galery.html">Gallery</a></li>
             </ul>
         </nav>
     </center>
+    <center>
+        <header>
+            <h1>Halo Kenalin</h1>
+        </header>
+    </center>
     <section>
         <img src="+/foto.jpg"  width="340px" height="500px">
+        <aside>
+            <a href="https://www.instagram.com/edoleonardo_as/">
+                <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" width="50" height="50"> </a>
+        </aside>
         
     <article> 
         <h1>Leonardo Adhi Saputra</h1> 
@@ -110,14 +127,19 @@
         <p>
             sedang mencari pacar
         </p> 
+        <p>
+            Saya suka mendengarkan lagu
+            contohnya video ini
+        </p>
         <p> 
-            <video controls> 
-                <source src="video/video-about.webm" 
+            <video width="400" height="280" controls> 
+                <source src="+/cek.mp4" 
 type="video/webm"/> 
             </video> 
         </p> 
     </article> 
 </section>
+
  
 <footer style="text-align: center;"> 
     <hr> 
