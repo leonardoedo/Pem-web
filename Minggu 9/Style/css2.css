@@ -1,0 +1,30 @@
+body{
+    background: #84a6d3;
+    text-align: center;
+}
+h1{
+    color: aliceblue;
+}
+.container{
+    margin: 10px auto;
+    width: 1150px;
+}
+.kotak{ 
+    background: blue; 
+    width: 500px; 
+    float: left; 
+    height: 250px; 
+    margin: 30px; 
+   } 
+.gradient1 { 
+    background: -webkit-linear-gradient(blue, white);
+   } 
+.gradient2 { 
+    background: -webkit-linear-gradient(left, purple , white, purple); 
+   } 
+.gradient3 {   
+          background: -webkit-radial-gradient(white, pink, red); 
+   } 
+.gradient4 { 
+          background: -webkit-radial-gradient(circle, white, blue, white); 
+   }

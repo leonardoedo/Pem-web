@@ -1,0 +1,39 @@
+body{ 
+    background: lightblue; 
+    text-align: center; 
+   } 
+     
+   h1{ 
+    color: #fff; 
+   } 
+     
+   div{ 
+    margin: 10px; 
+   } 
+     .container{
+        padding-left: 50px;
+     }
+   .kotak1{ 
+    background: #fff; 
+    width: 100px; 
+    height: 100px; 
+    transition: width 1s; 
+    -webkit-transition: width 1s; 
+   } 
+     
+   .kotak1:hover{ 
+    width: 300px; 
+   } 
+     
+   .kotak2{ 
+    background: #fff; 
+    width: 100px; 
+    height: 100px; 
+    transition: width 0,5s, height 0,5s; 
+    -webkit-transition: width 1s, height 1s; 
+   } 
+     
+   .kotak2:hover{ 
+    width: 200px; 
+    height: 200px; 
+   }
