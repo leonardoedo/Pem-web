@@ -1,0 +1,21 @@
+
+.group {
+  position: relative;
+  margin-top: 5% ;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item {
+  background-size:cover;
+  width: 12vw;
+  height: 75vh;
+  background-position: top;
+  background-size: cover 75vh;
+  margin: 0.7vw;
+  border-radius: 2.5vw;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+}
